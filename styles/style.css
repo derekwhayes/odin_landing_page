@@ -1,0 +1,45 @@
+:root {
+    --dark-color: #1f2937;
+    --text-color: #f9faf8;
+    --text-secondary-color: #e5e7eb;
+    --accent-color: #3882f6;
+
+    --fs-small: 18px;
+    --fs-medium: 24px;
+    --fs-large: 36px;
+    --fs-xl: 48px;
+}
+
+body {
+    margin: 0;
+}
+
+header,
+footer {
+    background-color: var(--dark-color);
+    padding: 0 15rem;
+}
+
+.header-nav {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-color);
+}
+
+.nav-links {
+    display: flex;
+    color: var(--text-secondary-color);
+}
+
+li {
+    list-style: none;
+    padding: 1rem;
+}
