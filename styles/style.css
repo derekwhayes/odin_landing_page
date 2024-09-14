@@ -19,22 +19,30 @@
     font-family: roboto-med;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     margin: 0;
+    height: 100%;
 }
 
 header,
 footer {
     background-color: var(--dark-color);
-    padding: 0 5rem 7rem;
+}
+
+header {
+    padding: 0 16rem 8rem;
+    height: 50%;
 }
 
 .header-nav {
-    margin: 0 0 3rem 0;
+    padding: 0 0 4.5rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
 }
 
 .header-logo {
@@ -48,12 +56,11 @@ footer {
 .nav-links {
     display: flex;
     font-size: var(--fs-small);
+    gap: 3rem;
 }
 
 li {
-    list-style: none;
-    padding-left: 1.5rem;
-    
+    list-style: none;      
 }
 
 a {
@@ -70,17 +77,16 @@ a:hover {
     display: flex;
     justify-content: space-between;
     align-items:center;
+    height: 80%;
     overflow: hidden;
-    object-fit: contain;
-    height: 250px;
 }
 
 .hero-text-button {
-    margin-right: 20px;
+    margin-right: 1.2rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 250px;
+    justify-content: center;
+    height: 100%;
 }
 
 .hero-title {
@@ -88,6 +94,7 @@ a:hover {
     font-size: var(--fs-xl);
     font-weight: 900;
     margin: 0;
+    padding-bottom: 1rem;
 }
 
 .hero-text {
@@ -95,21 +102,59 @@ a:hover {
     font-size: var(--fs-small);
     margin-top: 0;
     margin-bottom: 0;
+    max-width: 49ch;
 }
 
 .hero-button {
     background-color: var(--accent-color);
     color: var(--text-color);
-    padding: 5px 25px;
+    font-size: var(--fs-small);
+    padding: .8rem 1.5rem;
+    margin-top: 3rem;
     border-radius: 5px;
-    width: 150px;
+    width: 40%;
 }
 
 .hero-img {
-    
-    height: 300px; 
+    min-height: 100%;
+    width: 50%;
+    object-fit: cover;
+}
+
+main {
+    height: auto;
+}
+
+h2 {
+    text-align: center;
+    font-size: var(--fs-large);
+    font-weight: 900;
+    color: var(--dark-color);
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    height: 50%;
+}
+
+.card {
+    width: 15%;
+    overflow: hidden;   
 }
 
 .card img {
-    width: 40px;
+    width: 100%;
+    min-height: 75%;
+    overflow: hidden;
+    object-fit: cover;
+    box-shadow: 0 5px 2px 0 rgba(0, 0, 0, 0.296);
+    border-radius: 9%;
+}
+
+.card p {
+    text-align: center;
+    color: var(--dark-color);
+    margin-top: 0.5rem;
 }
