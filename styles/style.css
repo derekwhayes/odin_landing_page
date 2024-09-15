@@ -248,3 +248,11 @@ h3 {
     font-weight: bold;
     flex: 0 0 auto;
 }
+
+footer p {
+    margin: 0;
+    padding: 3rem;
+    text-align: center;
+    color: var(--text-secondary-color);
+    font-size: 22px;
+}
