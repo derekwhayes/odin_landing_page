@@ -1,6 +1,6 @@
 # Odin Landing Page
 
-### Practice html/css by remaking The Odin Project's make believe landing page.
+### Practice html/css by remaking The Odin Project's make believe landing page. Instructions said not to worry about responsiveness...so it's only good down to 1080px...oh well!
 <hr>
 
 ### Credits
